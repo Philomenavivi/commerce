@@ -50,15 +50,15 @@ export default function ProductBody() {
   return (
     <section className="bg-[#f5f5f5] min-h-screen px-4 md:px-10 py-6">
   
-      <div className="relative  h-[250px] rounded-xl overflow-hidden mb-8">
-        <Image src={girlimage} alt="philo.png" width={600} height={600} />
+      <div className="relative  h-[200px] rounded-xl align item-center overflow-hidden mb-8">
+        <Image src={girlimage} alt="philo.png" width={300} height={300} />
             
           
 
 
         <div className="absolute inset-0 bg-black/20 flex items-center">
           <div className="pl-10 text-white">
-            <h1 className="text-5xl font-light leading-tight">
+            <h1 className="text-sm font-light text-left">
               Simple <br /> is More
             </h1>
           </div>
@@ -152,17 +152,17 @@ export default function ProductBody() {
           </div>
 
     
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1  text-center text-sm font-medium sm:grid-cols-2 xl:grid-cols-3 gap-3">
             {products.map((product) => (
               <div
                 key={product.id}
-                className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition"
+                className="bg-white rounded-sm p-3 shadow-sm hover:shadow-md transition"
               >
-                <div className="relative  h-[260px] mb-4">
+                <div className="relative  h-[200px] mb-6 align item-center">
                   <Image src={redimage}
                    alt={'red.png'}
-                  width={200}
-                   height={200}
+                  width={220}
+                   height={220}
                    
                     />
 
