@@ -51,7 +51,7 @@ export default function ProductBody() {
     <section className="bg-[#f5f5f5] min-h-screen px-4 md:px-10 py-6">
   
       <div className="relative  h-[200px] rounded-xl align item-center overflow-hidden mb-8">
-        <Image src={girlimage} alt="philo.png" width={300} height={300} />
+        <Image src={girlimage} alt="philo.png" fill className="object-cover" />
             
           
 
@@ -102,14 +102,7 @@ export default function ProductBody() {
             <h3 className="font-medium mb-3">Size</h3>
 
             <div className="flex flex-wrap gap-2">
-              {["XS", "S", "M", "L", "XL"].map((size) => (
-                <button
-                  key={size}
-                  className="border px-3 py-2 rounded-md hover:bg-black hover:text-white transition"
-                >
-                  {size}
-                </button>
-              ))}
+              
             </div>
           </div>
 
